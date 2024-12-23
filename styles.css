@@ -1,0 +1,265 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* Dark background for dark theme */
+    color: #000000; /* Light text for dark theme */
+}
+
+a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d1d1d1;
+}
+
+
+
+.bg-primary {
+    background-image: url(https://th.bing.com/th/id/OIP.9na7GvEuZpqIagWU47iFeQHaDm?rs=1&pid=ImgDetMain);
+    --bs-bg-opacity: 1;
+    background-color: #000 !important;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #282828, #444444);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ffcc00; /* Highlighted header text */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #d1d1d1;
+}
+
+/* Buttons */
+button, .btn-primary {
+    background: linear-gradient(45deg, #ff8008, #ffc837); /* Shiny button effect */
+    border: none;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover, .btn-primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(255, 128, 8, 0.5);
+}
+
+/* Headings */
+h2, h3, h4 {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Card Section */
+.card {
+    background-color: #1e1e1e;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 3px solid #ff8008;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #000000, #000000);
+    color: #d1d1d1;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #ffcc00;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc837;
+}
+
+footer .footer-heading {
+    font-size: 1.8rem;
+    color: #f9f9f9;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #d1d1d1;
+}
+
+/* Recent Projects Section */
+#projects {
+    background-color: #1e1e1e; /* Dark background for project cards */
+    padding: 3rem 0;
+}
+
+#projects .card {
+    border: none;
+    background-color: #282828;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 128, 8, 0.4);
+}
+
+#projects h2 {
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Section with Image and Content */
+#key-points {
+    background-color: #1e1e1e;
+    padding: 3rem 0;
+}
+
+#key-points h2 {
+    color: #ffcc00;
+    font-size: 2.5rem;
+}
+
+#key-points ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+#key-points li {
+    font-size: 1.2rem;
+    color: #d1d1d1;
+    margin-bottom: 0.5rem;
+}
+
+#key-points i {
+    font-size: 1.5rem;
+    color: #ffc837;
+    margin-right: 0.5rem;
+}
+
+#key-points img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+/* Social Media Links Section */
+#social-media {
+    background-color: #000000;
+    padding: 2rem 0;
+    color: #d1d1d1;
+    text-align: center;
+}
+
+#social-media h3 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+#social-media .social-link img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#social-media .social-link img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(255, 128, 8, 0.5);
+}
+
+/* Contact Form */
+form input, form textarea, form button {
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #1e1e1e;
+    color: #f9f9f9;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    box-shadow: 0 4px 8px rgba(255, 128, 8, 0.5);
+    outline: none;
+}
+
+form button {
+    background: linear-gradient(45deg, #ff8008, #ffc837);
+    color: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: linear-gradient(45deg, #ffc837, #ff8008);
+    transform: scale(1.05);
+}
+/* Testimonial Section */
+#testimonials {
+    background-color: #f9f9f9;
+}
+
+#testimonials h2 {
+    font-size: 2.5rem;
+    color:  #ffc837;
+}
+
+#testimonials img {
+    border: 4px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#testimonials blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #000000;
+}
+
+#testimonials .blockquote-footer {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
